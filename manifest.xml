@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- 定义远程仓库的公共前缀 URL -->
+  <remote name="github"
+          fetch="https://github.com/Evan-ZGYF/" />
+          <!-- 也可以是 fetch="git@github.com:your-username/" -->
+
+  <!-- 设置默认属性，应用于所有 <project> -->
+  <default revision="main"   <!-- 默认分支 -->
+           remote="github"   <!-- 默认远程 -->
+           sync-j="4" />     <!-- 同步时的并行任务数 -->
+
+  <!-- 具体定义每一个 Git 子仓库 -->
+  <project path="kernel-6.1" name="kernel-6.1.git" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r487747c" name="prebuilts.git" />
+  <project path="external/wifi_driver" name="external.git" />
+  <!-- 可以继续添加更多 <project> -->
+</manifest>
