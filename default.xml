@@ -5,9 +5,10 @@
           fetch="https://github.com/Evan-ZGYF/" />
 
   <!-- 设置默认属性，应用于所有 <project> -->
-  <default revision="main"           <!-- 将 master 改为 main 以匹配远程分支 -->
-           remote="github"           <!-- 默认远程 -->
-           sync-j="4" />             <!-- 同步时的并行任务数 -->
+  <!-- 将 master 改为 main 以匹配远程分支 -->
+  <default revision="main"
+           remote="github"
+           sync-j="4" />
 
   <!-- 具体定义每一个 Git 子仓库 -->
   <project path="kernel-6.1" name="kernel-6.1.git" />
